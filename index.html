@@ -1,11 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>truetab</title>
+    <link rel="icon" href="img/ti-logo.ico">
+    <link rel="stylesheet" href="truetab-style.css">
+    <link rel="stylesheet" href="media-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header class="header">
+        <a href="index.html"><img src="img/logo.png" alt="image not found" class="logo-img"></a>
+        <nav class="nav">
+          <ul class="menu-ul" >
+              <li><a href="index.html" class="active menu-li">Home</a></li>
+              <li><a href="about.html" class="menu-li abu">About Us</a></li>
+              <li><a href="news.html" class="menu-li">News</a></li>
+              <li><a href="blog.html" class="menu-li">Blog</a></li>
+              <li><a href="contact.html" class="menu-li">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <i class="fa fa-bars" style="font-size:24px; color: white;"></i>
+          <ul class="mobile-menu">
+            <li><a href="index.html" class="menu-li active">Home</a></li>
+            <li><a href="about.html" class="menu-li">About</a></li>
+            <li><a href="news.html" class="menu-li">News</a></li>
+            <li><a href="blog.html" class="menu-li">Blog</a></li>
+            <li><a href="contact.html" class="menu-li">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+    <main>
+        <section class="home-row1">
+            <div class="row1-col1">
+                <div class="home-header-text">
+                    India’s first tech & service <br> platform for local pharmacies!
+                </div>
+                <div class="home-service">
+                    <img src="img/mobile-app-website.svg" alt="image not found" class="service-mob hover">
+                    <img src="img/get-marketing-support.svg" alt="image not found" class="service-market hover">
+                    <img src="img/doorstep-delivery.svg" alt="image not found" class="service-delivery hover">
+                </div>
+                <div class="conect-team">
+                    <img src="img/connect-with-our-team.png" alt="image not found">
+                </div>
+            </div>
+            <div class="row1-col2">
+                <img src="img/banner-img-2.gif" alt="gif not found" class="banner-img">
+            </div>
+        </section>
+        <section class="home-row2">
+            Everything you need <br> to grow your business
+        </section>
+        <section class="home-row3">
+            <ul class="r3-list">
+                <li style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; background-color:#a0c539;">1
+                </li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;">6</li>
+            </ul>
+        </section>
+        <section class="home-row4">
+            <div class="pharmacies-row">
+                <img src="img/take-your-pharmacy-online.gif" alt="">
+                <div class="pharmacies-text">
+                    <h2>Take your Pharmacy Online</h2>
+                    <p>Get a power-packed e-commerce website & mobile app to impress and win
+                        your customers</p>
+                </div>
+            </div>
+        </section>
+        <section class="home-row5">
+            <div class="r5-video">
+                <video autoplay>
+                    <source src="video/True-Tab_01.74682ecdea933a01cb65.mp4">
+                </video>
+            </div>
+            <div style=" margin-bottom: 100px;">
+                <div class="r5-business">
+                    <div class="business-arrow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="38" width="38" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="business-text">
+                        <p class="head-p">Advanced Business <br>Dash board </p>
+                        <p class="smal-text"> Business Information at your <br> finger tips. </p>
+                    </div>
+                </div>
+
+                <div class="r5-business" style=" margin-top: 80px;">
+                    <div class="business-arrow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="38" width="38" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="business-text">
+                        <p class="head-p">Track Customer Deliveries</p>
+                        <p class="smal-text"> Delivery made easy and simple <br> with our delivery integrations.</p>
+                    </div>
+                </div>
+                <div class="r5-business" style=" margin-top: 80px;">
+                    <div class="business-arrow">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="38" width="38" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="business-text">
+                        <p class="head-p">Accept Digital Payments</p>
+                        <p class="smal-text"> Receive digital payments <br> in your account directly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-row6">
+            <div class="hor6-head">
+                Get the advantage of  <br> truetab multiplier services 
+            </div>
+            <img src="img/Mobile-copy-2.png" alt="image not found"
+                     class="m1-img-animation11" data-aos="fade-up">
+            <div class="img">
+                <div class="m1-imgs-text">
+                    <div class="dr-head">
+                        <!-- <p class="dr-con">Doctor Consultation</p> -->
+                        <img src="img/Doctor-Consultation.png" alt="" style="width: 62px; height: 62px;">
+                        <img src="img/line_3dot_2.2a7116c2247816cf6a38.png" alt="" class="dr-line">
+                        <p class="dr-con">Doctor Consultation</p>
+                    </div>
+                    <div class="lab-head">
+                        <img src="img/Lab-Test.png" alt="" style="width: 62px; height: 62px;">
+                        <img src="img/dot_2.ae1b894e202333769ef6.png" alt="" class="lab-line">
+                        <p>Lab Test</p>
+                    </div>
+                    <div class="more-head">
+                        <img src="img/line2_dot_2.2ee7089a815d820a25ce.png" alt="" class="more-line">
+                        <img src="img/download.png" alt="" style="width: 62px; height: 62px;">
+                        <p>And Many more</p>
+                    </div>
+                </div>
+                <div class="mob-img2 ">
+                    <img src="img/Mobile-copy-2.png" alt="image not found"
+                     class="m1-img-animation" data-aos="fade-up">
+                    <img src="img/Mobile-01-copy.png" alt="image not found"
+                         class="m2-img-animation" data-aos="fade-up">
+                </div>
+                <div class="m2-imgs-text">
+                    <div class="ambu-head">
+                        <img src="img/line2_dot_2.2ee7089a815d820a25ce.png" alt="" class="ambu-line">
+                        <img src="img/car.png" alt="" style="width: 62px; height: 62px;">
+                        <p>Ambulance Booking</p>
+                    </div>
+                    <div class="insu-head">
+                        <img src="img/Insurance.png" alt="" style="width: 62px; height: 62px;">
+                        <img src="img/dot_2.ae1b894e202333769ef6.png" alt="" class="insu-line">
+                        <p>Insurance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-row7">
+            <div class="hr7-head">
+                <p>truetab in News</p>
+            </div>
+            
+            <div class="hr7-news">
+                <img src="img/news1.png" alt="image not found" class="news-img">
+                <img src="img/news2.png" alt="image not found" class="news-img">
+                <img src="img/news3.png" alt="image not found" class="news-img">
+                <img src="img/news4.png" alt="image not found" class="news-img">
+                <img src="img/news5.png" alt="image not found" class="news-img">
+                <img src="img/news6.png" alt="image not found" class="news-img new6 ">
+            </div>
+        </section>
+        <section class="home-row8">
+                <p>Empowering local pharmacies <br> across India</p>
+        </section>
+        <section class="home-row9"> 
+                <img src="img/Mobile-03.png" alt="image not found" class="mobile-animation" data-aos="fade-up">
+        </section>
+        <section class="home-row10">
+            <img src="img/secure-background.png" alt="image not found" class="img-back">
+            <img src="img/million-pharmacy1.png" alt="image not found" class="img-mill">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="image not found">
+        </div>
+        <div class="footer-menu-txt">
+            <a href=""><span class="ft-span">© Copyright 2023 Truetab All Rights Reserved </span></a>
+            <a href="#"><span>| Privacy Policy | </span>  </a>
+            <a href="#"><span>Terms & Conditions | </span></a>
+            <a href="#"><span>Shipping & Returns Policy | </span></a>
+        </div>
+    </footer>
+    <!-- aps.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+      AOS.init();
+    </script>
 </body>
 </html>

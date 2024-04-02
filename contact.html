@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truetab</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="truetab-style.css">
+    <link rel="stylesheet" href="media-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="con_body">
+    <header class="header con-hed">
+        <a href="index.html"><img src="img/logo.png" alt="image not found" class="logo-img"></a>
+        <nav class="nav">
+            <ul class="menu-ul">
+                <li><a href="index.html" class=" menu-li">Home</a></li>
+                <li><a href="about.html" class="menu-li abu">About Us</a></li>
+                <li><a href="news.html" class="menu-li ">News</a></li>
+                <li><a href="blog.html" class="menu-li">Blog</a></li>
+                <li><a href="contact.html" class="menu-li active">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <i class="fa fa-bars" style="font-size:24px; color: white;"></i>
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="con-img">
+                <img src="img/contact-img1.png" alt="image not found">
+            </div>
+            <div class="con-txt">
+                <div>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                        color="#6735B9" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(103, 53, 185);">
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z">
+                        </path>
+                        <circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="32"></circle>
+                    </svg>
+                </div>
+                <h4 class="cont-header">Corporate Office</h4>
+                <p class="cont-header-p">Truetab Private Limited HD-009, We Work, K. Raheja Platinum, Sag Baug Road,<br>
+                    Mumbai, India</p>
+                <h4 class="cont-header">Regional Office</h4>
+                <p>E 52, Info City, Patia Bhubaneswar.</p>
+                <button class="con-btn" onclick="openForm()">Contact Us</button>
+            </div>
+        </section>
+        <section class="con-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14964.266406315823!2d85.8047616!3d20.3388671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19097bb501f957%3A0xe0643aa8db3673ac!2sTruetab!5e0!3m2!1sen!2sin!4v1699371924312!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contact_form" class="popup_form">
+            <div style="width: 432.567px; background-color: white;">
+                <span style="color: rgb(92, 37, 131);float: right;" onclick="closeForm()"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                        font-size="24px" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm75.31 260.69a16 16 0 11-22.62 22.62L256 278.63l-52.69 52.68a16 16 0 01-22.62-22.62L233.37 256l-52.68-52.69a16 16 0 0122.62-22.62L256 233.37l52.69-52.68a16 16 0 0122.62 22.62L278.63 256z">
+                        </path>
+                    </svg></span><br><br>
+                <form class="form-container">
+                    <h3>Get A Call From Our Experts For A Free Demo</h3>
+                    <input type="text" name="c_name" id="c_name" class="c_inputbox" placeholder="Enter Your Name">
+                    <span id="err_name"></span>
+                    <input type="email" name="c_email" id="c_email" class="c_inputbox"
+                        placeholder="Enter Your Email ID">
+                        <span id="err_email"></span>
+                    <input type="number" name="c_mobile" id="c_mobile" class="c_inputbox" placeholder="Mobile No.">
+                    <span id="err_mobile"></span>
+                    <input type="text" name="c_subject" id="c_subject" class="c_inputbox" placeholder="Subject">
+                    <span id="err_subject"></span>
+                    <textarea name="c_msg" id="c_msg" rows="5" cols="54" placeholder="Message"
+                        style="border-radius: 5px;"></textarea>
+                        <span id="err_msg"></span>
+                    <button class="con-btn" type="button" style="margin-right:250px;" onclick="form_validation()">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="image not found">
+        </div>
+        <div class="footer-menu-txt">
+            <a href=""><span class="ft-span">© Copyright 2023 Truetab All Rights Reserved </span></a>
+            <a href="#"><span>| Privacy Policy | </span> </a>
+            <a href="#"><span>Terms & Conditions | </span></a>
+            <a href="#"><span>Shipping & Returns Policy | </span></a>
+        </div>
+    </footer>
+    <!-- aps.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById("contact_form").style.display = "flex";
+            document.body.style.overflow="hidden";
+        }
+        function closeForm(){
+            document.getElementById("contact_form").style.display = "none";
+        }
+        function form_validation(){
+           
+            let name =document.getElementById("c_name").value;
+            let email =document.getElementById("c_email").value;
+            let mobile =document.getElementById("c_mobile").value;
+            let subject =document.getElementById("c_subject").value;
+            let msg =document.getElementById("c_msg").value;
+            let err_name =document.getElementById("err_name");
+            if(name == ""){
+                err_name.innerHTML="Plase Enter Your Name";
+                document.getElementById("c_name").focus();
+                document.getElementById("c_name").style.borderColor="red";
+            }
+            else if(email == ""){
+                err_email.innerHTML="Plase Enter Your Email";
+                document.getElementById("c_email").focus();
+                document.getElementById("c_email").style.borderColor="red";
+            }
+            else if(mobile == ""){
+                err_mobile.innerHTML="Plase Enter Your Mobile";
+                document.getElementById("c_mobile").focus();
+                document.getElementById("c_mobile").style.borderColor="red";
+            }
+            else if(subject == ""){
+                err_subject.innerHTML="Plase Enter Your Subject";
+                document.getElementById("c_subject").focus();
+                document.getElementById("c_subject").style.borderColor="red";
+            }
+            else if(msg == ""){
+                err_msg.innerHTML="Plase Enter Your Message";
+                document.getElementById("c_msg").focus();
+                document.getElementById("c_msg").style.borderColor="red";
+            }
+            else{
+                alert("Message Sent");
+            }
+        }
+        
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+        AOS.init();
+    </script>
+</body>
+
+</html>
